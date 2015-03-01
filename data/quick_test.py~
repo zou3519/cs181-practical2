@@ -16,7 +16,7 @@ for fn in os.listdir('./train'):
 			if url in line: flag = 1
 		if int_access in line:
 			sketchy_calls.add(line)'''
-		if 'RASMAN' in line:
+		if '<impersonate_user user="Administrator"' in line:
 			flag = 1
 	if flag: print fn
 	flag = 0
